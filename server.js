@@ -14,8 +14,7 @@ mongoose.connect(
         useUnifiedTopology: true,
         useFindandModify:false,
         useCreateIndex:true,
-    }
-);
+    });
 const connection = mongoose.connection;
 
 connection.on("connected", ()=> {
@@ -30,11 +29,11 @@ app.use(express.static("client/build"));
 
 app.get("api/config",(req,res)=> {
     res.json({success: true});
-})
+});
 
 app.get("*" , (req,res)=> {
-    res.json({success:true});
-})
+    res.sendFile(path.join(_dirname,"client/build/index.html"));
+});
 
 app.listen(PORT,()=> {
     console.log('server is running on http://localhost:${PORT}');
