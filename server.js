@@ -1,8 +1,10 @@
 const express = require ("express");
 const mongoose = require ("mongoose");
 const app = express ();
+const path = require("path");
 
 const PORT = process.env.PORT || 3001;
+console.log('Before Connect')
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
@@ -16,6 +18,7 @@ mongoose.connect(
         useCreateIndex:true,
     });
 const connection = mongoose.connection;
+console.log('After Connect')
 
 connection.on("connected", ()=> {
     console.log("Mongoose successfully connected!");
@@ -31,7 +34,7 @@ app.get("api/config",(req,res)=> {
     res.json({success: true});
 });
 
-app.get("*" , (req,res)=> {
+app.get("*", (req,res)=> {
     res.sendFile(path.join(_dirname,"client/build/index.html"));
 });
 
