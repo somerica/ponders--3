@@ -2,7 +2,7 @@ import NewClothingitem from "./containers/NewClothingitem/NewClothingitem";
 import ClothingDetail from "./container/ClothingDetail/ClothingDetail";
 import Services from "./containers/Services/Services";
 import './App.css';
-import Home from "./components/Home/Home/Home";
+
 
 function App() {
   return (
