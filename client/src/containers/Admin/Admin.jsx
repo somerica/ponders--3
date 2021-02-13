@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Services = () => {
+const Admin = () => {
     return(
         <div>yes</div>
     )
 }
 
-export default Services;
+export default Admin;
