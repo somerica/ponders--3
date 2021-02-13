@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import NewClothingitem from "./containers/NewClothingitem/NewClothingitem";
+import ClothingDetail from "./container/ClothingDetail/ClothingDetail";
+import Services from "./containers/Services/Services";
 import './App.css';
+import Home from "./components/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      <Router>
+        <NavBar/>
+         <Switch>
+         <Route exact path="/" component= {Home}/>
+         <Route exact path="/about" component= {About}/>
+         <Route exact path="/contact" component= {Contact}/>
+         <Route exact path="/services" component= {Services}/>
+         <Route exact path="/clothing/:id" component= {ClothingDetail}/>
+         <Route exact path="/admin" component= {Admin}/>
+         <Route exact path ="/admin/newclothingitem" component={NewClothingitem}/>  
+         </Switch>
+         </Router>
+     </div>
   );
 }
 
