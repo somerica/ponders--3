@@ -2,7 +2,9 @@ import React from 'react';
 
 const Home = () => {
     return(
-        <div>yes</div>
+        <div>class row
+            
+        </div>
     )
 }
 
