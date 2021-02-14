@@ -1,7 +1,7 @@
-import React from 'React';
+import React from 'react';
 
  const NewClothingItem = () => {
-     return(
+     return (
         <div>yes</div>
      )
  }

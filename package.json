@@ -28,6 +28,8 @@
     "concurrently": "^5.3.0",
     "express": "^4.17.1",
     "if": "^2.0.0",
-    "mongoose": "^5.11.15"
+    "materialize-css": "^1.0.0-rc.2",
+    "mongoose": "^5.11.15",
+    "react-materialize": "^3.9.7"
   }
 }
