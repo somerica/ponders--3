@@ -34,6 +34,10 @@ const Admin = () => {
             <label htmlFor="imageURL">Clothing Image</label>
           </div>
          </div>
+         <a class="waves-effect waves-light btn-small"><i class="material-icons left"></i>Add</a>
+        
+         <a class="waves-effect waves-light btn-small"><i class="material-icons right"></i>Delete</a>
+        
         </form>
       </div>
     </div>
