@@ -31,6 +31,9 @@ const Pickup = () => {
           <textarea id="textarea1" className="materialize-textarea"></textarea>
           <label for="textarea1">Message</label>
         </div>
+        <div></div>
+        <input type="text" class="datepicker"></input>
+        <input type="text" class="timepicker"></input>
       </div>
       <button class="btn waves-effect waves-light" type="submit" name="action">Submit
     <i class="material-icons right"></i>
