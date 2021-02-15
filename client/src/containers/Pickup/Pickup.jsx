@@ -6,18 +6,14 @@ const Pickup = () => {
         <form className="col s12" action="">
             <div className="row">
                 <div className="input-field col s6">
-                    <input placeholder="Placeholder" id="first_name" type="text" className="validate"/>
+                    <input placeholder="" id="first_name" type="text" className="validate"/>
                     <label for="first_name">First Name</label>
                 </div>
                 <div className="input-field col s6">
                     <input id = "last_name" type="text" clas="validate"/>
                     <label for ="last_name"> Last Name</label>
                 </div>
-                <div className="row">
-                    <div className="input-field col 12">
-                    <input disabled value="I am not editable" id="disabled" type="text" class="validate"/>
-                    </div>
-                </div>
+            
                 <div class="row">
         <div class="input-field col s12">
           <input id="email" type="email" class="validate"/>
@@ -36,7 +32,17 @@ const Pickup = () => {
       </div>
             </div>
         </form>
-    </div>
+        <div class="row">
+    
+      </div>
+         <div class="input-field col s6">
+         <i class="material-icons prefix">phone</i>
+         <input id="icon_telephone" type="tel" class="validate"/>
+         <label for="icon_telephone"></label>
+       </div>
+     </div>
+
+
        
     )
 };
