@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema 
 
-const Cleaners = new Schema(
+const Clothing = new Schema(
 {
     item:{type: String ,required:true },
     price:{type: Number,required:true },
@@ -12,4 +12,4 @@ const Cleaners = new Schema(
 
 )
 
-module.exports= mongoose.model('cleaners', Clesners)
+module.exports= mongoose.model('clothing', Clothing)

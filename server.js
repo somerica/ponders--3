@@ -3,6 +3,9 @@ const mongoose = require ("mongoose");
 const app = express ();
 const path = require("path");
 
+const db = require('./db')
+const movieRouter = require('./routes/clothing-router')
+
 const PORT = process.env.PORT || 3001;
 console.log('Before Connect')
 
@@ -17,7 +20,7 @@ mongoose.connect(
         useFindandModify:false,
         useCreateIndex:true,
     });
-    
+
 const connection = mongoose.connection;
 console.log('After Connect')
 
