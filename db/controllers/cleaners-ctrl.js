@@ -1,4 +1,4 @@
-const Clothing = require('../clothing-models')
+const Clothing = require('../../models/clothing-models')
 
 createClothing = (req, res) => {
     const body = req.body

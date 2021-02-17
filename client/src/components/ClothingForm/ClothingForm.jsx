@@ -6,6 +6,7 @@ const ClothingForm = ({ handleFormSubmit }) => {
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
   const [imageURL, setimageURL] = useState("");
+  const [category ,setCategory] = useState("");
 
   return (
     <div>
@@ -76,6 +77,21 @@ const ClothingForm = ({ handleFormSubmit }) => {
                 }}
               />
               <label htmlFor="imageURL">Clothing Image</label>
+            </div>
+          </div>
+          <div className="row">
+            <div className="input-field cpl s12">
+              <input
+                placeholder="Clothing category"
+                id="category"
+                type="text"
+                name="category"
+                value={category}
+                onChange={(e) => {
+                  setCategory(e.target.value);
+                }}
+              />
+              <label htmlFor="category">Clothing Category</label>
             </div>
           </div>
           <div className="row">
