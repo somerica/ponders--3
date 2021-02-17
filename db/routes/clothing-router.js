@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-const ClothingCtrl = require('../controllers/cleaners-ctrl')
+const ClothingCtrl = require('../controllers/clothing-ctrl')
 
 
 

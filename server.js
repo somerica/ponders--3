@@ -4,7 +4,7 @@ const app = express();
 const path = require("path");
 
 const db = require('./db')
-const clothingRouter = require('./models/routes/clothing-router')
+const clothingRouter = require('./db/routes/clothing-router')
 
 const PORT = process.env.PORT || 3001;
 console.log('Before Connect')
@@ -31,6 +31,8 @@ connection.on("connected", ()=> {
 connection.on("error", (err) => {
     console.log("Mongoose connection error: ",err);
 });
+
+const ClothingController = require("./controllers/clothingController");
 
 app.use(express.static("client/build"));
 app.use('/', clothingRouter)
