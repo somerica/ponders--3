@@ -1,8 +1,9 @@
 const express = require('express')
-
-const ClothingCtrl = require('../controllers/clothing-ctrl')
-
 const router = express.Router()
+
+const ClothingCtrl = require('../controllers/cleaners-ctrl')
+
+
 
 router.post('/clothing', ClothingCtrl.createClothing)
 router.put('/clothing/:id', ClothingCtrl.updateClothing)

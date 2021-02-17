@@ -24,7 +24,8 @@ function App() {
          <Route exact path="/services" component={Services}/>
          <Route exact path="/clothing/:id" component={ClothingDetail}/>
          <Route exact path="/admin" component={Admin}/>
-         <Route exact path ="/admin/newclothingitem" component={NewClothingItem}/>  
+         <Route exact path ="/admin/newclothingitem" component={NewClothingItem}/> 
+         
          </Switch>
          </Router>
      </div>

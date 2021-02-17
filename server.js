@@ -1,10 +1,10 @@
 const express = require ("express");
 const mongoose = require ("mongoose");
-const app = express ();
+const app = express();
 const path = require("path");
 
 const db = require('./db')
-const movieRouter = require('./routes/clothing-router')
+const clothingRouter = require('./models/routes/clothing-router')
 
 const PORT = process.env.PORT || 3001;
 console.log('Before Connect')
@@ -33,6 +33,7 @@ connection.on("error", (err) => {
 });
 
 app.use(express.static("client/build"));
+app.use('/', clothingRouter)
 
 app.get("api/config",(req,res)=> {
     res.json({success: true});

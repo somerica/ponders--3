@@ -2,6 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
+
     <>
       <section className="description">
         <div className="section white center">
@@ -35,14 +36,16 @@ const Home = () => {
             </div>
           </div>
           <div className="col s6">
-            MIDDLE STUFF GOES HERE
-            <h1>
-              Ponders Cleaners was started in 1970 by Margaret Ponder.
+            <h6>
+              Ponders Cleaners(formally Ponders 60 Minute Cleaners) was started in 1970 by Margaret Ponder.
               Mrs.Ponder was a widow with six children , who had worked at other
               dry cleaners for years. One day it occured to her she could open
               her own cleaners , be her own boss and secure a future for her
-              childern.
-            </h1>
+              children. With the help of a small business loan Mrs. Ponder was able to purchase a "One Hour Martinizing"
+              franchise and set up at the location on Campbellton Rd. Years later when "One Hour" went out of business Mrs. Ponder
+              changed the name to Ponders Cleaners and the rest is history. Mrs. Ponder passed in March of 2002 and the business is now run 
+              by her oldest son Roderick Ponder.
+            </h6>
           </div>
           <div className="col s3">
             <div className="card">
@@ -58,6 +61,15 @@ const Home = () => {
               </div>
             </div>
             RIGHT STUFF GOES HERE
+          </div>
+          <div class="divider"></div>
+         
+          <div className="row">
+            <div className="center">
+              Our Location
+              <p>Address: 4473 Campbellton Rd SW Atlanta ,Ga 30331.</p>
+              <p> Phone : (404) 349-6464</p>
+            </div>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
-const Clothing = require('../models/clothing-model')
+const Clothing = require('../clothing-models')
 
-createItem = (req, res) => {
+createClothing = (req, res) => {
     const body = req.body
 
     if (!body) {
@@ -123,4 +123,4 @@ module.exports = {
     getClothing,
     getClothingById,
 }
-view raw
+// view raw
