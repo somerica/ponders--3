@@ -9,7 +9,7 @@ const ClothingForm = ({ handleFormSubmit }) => {
   const [category ,setCategory] = useState("");
 
   return (
-    <div>
+    <>
       <form
         className="col 12"
         onSubmit={(e) => {
@@ -18,14 +18,15 @@ const ClothingForm = ({ handleFormSubmit }) => {
             price,
             description,
             imageURL,
+            category,
           });
         }}
       >
         <div className="row">
           <div className="input-field col s6">
             <input
-              placeholder="Clothing Item"
-              id="item"
+              placeholder="Clothing Title"
+              id="title"
               type="text"
               name="title"
               value={title}
@@ -33,7 +34,7 @@ const ClothingForm = ({ handleFormSubmit }) => {
                 setTitle(e.target.value);
               }}
             />
-            <label htmlFor="title">Clothing Item</label>
+            <label htmlFor="title">Clothing Title</label>
           </div>
           <div className="input-field col s6">
             <input
@@ -67,7 +68,7 @@ const ClothingForm = ({ handleFormSubmit }) => {
           <div className="row">
             <div className="input-field cpl s12">
               <input
-                placeholder="Clothing image"
+                placeholder="Clothing imageURL"
                 id="imageURL"
                 type="text"
                 name="imageURL"
@@ -101,7 +102,7 @@ const ClothingForm = ({ handleFormSubmit }) => {
           </div>
         </div>
       </form>
-    </div>
+    </>
   );
 };
 export default ClothingForm;

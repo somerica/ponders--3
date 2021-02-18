@@ -3,13 +3,12 @@ import axios from "axios";
 import ClothingForm from "../../components/ClothingForm/ClothingForm";
 
 const NewClothingItem = () => {
-  
-  const handleFormsubit = (e ,ClothingData) => {
-    e.preventdefault();
+  const handleFormSubmit = (e, ClothingData) => {
+    e.preventDefault();
     axios
-      .post("/api/clothing", )
+      .post("/api/clothing", ClothingData)
       .then((response) => {
-        console.log("yes");
+        console.log(response.data);
       })
       .catch((err) => {
         console.log(err);
@@ -24,8 +23,8 @@ const NewClothingItem = () => {
         </div>
       </div>
       <div className="row">
-        <ClothingForm handleFormSubmit={handleFormsubmit}/>
-     </div>
+        <ClothingForm handleFormSubmit={handleFormSubmit}/>
+      </div>
     </div>
   );
 };
